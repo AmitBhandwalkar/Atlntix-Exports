@@ -1,0 +1,95 @@
+                                      /* animation */
+
+
+ /* ------------------------------------------------------------ */
+
+ @media (min-width: 768px){
+
+ @keyframes comeingfromUp{
+    from {
+      transform: translateX(-500px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   .anim-comingfromUp{
+      animation-name: comeingfromUp;
+      animation-duration: 4s;
+    
+   }
+  
+   @keyframes comeingfromDown{
+    from {
+      transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   .anim-comeingfromDown{
+      animation-name: comeingfromDown;
+      animation-duration: 2s;
+    
+   }
+  
+  
+
+
+   @keyframes comingfromLeft{
+    from {transform: translateX(-200px);}
+    to {opacity: 1;}
+  }
+   .anim-comingfromLeft{
+      animation-name: comingfromLeft;
+      animation-duration: 4s;
+      animation-timeline: view();
+      animation-range:  entry 0 40%;
+   }
+  
+   @keyframes comeingfromRight{
+    from {transform: translateX(+200px);}
+    to {opacity: 1;}
+  }
+   .anim-comingfromRight{
+      animation-name: comeingfromRight;
+      animation-duration: 4s;
+      animation-timeline: view();
+      animation-range:  entry 0 40%;
+   }
+
+   @keyframes comeingfromBehind{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.anim-comeingfromBehind{
+  animation: comeingfromBehind;
+  animation-duration: 4s;
+  animation-timeline: view();
+  animation-range:  entry 0 40%;
+}
+
+@keyframes appear3{
+  from{
+     
+      clip-path: inset(0 100% 0 0);
+  }
+  to{
+    
+      clip-path: inset(0 0 0 0);
+  }
+}
+.anim-3{ 
+animation: appear3 2s linear;
+animation-duration: 20s;
+animation-timeline: view();
+animation-range:  entry 0 30%;
+}
+
+}
